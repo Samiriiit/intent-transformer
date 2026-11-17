@@ -1,0 +1,206 @@
+{
+  "total_samples": 2000,
+  "per_class_counts": {
+    "LEGAL": 500,
+    "ECOMMERCE": 500,
+    "RETAIL": 500,
+    "GENERIC": 500
+  },
+  "average_length_by_class": {
+    "GENERIC": 13.33,
+    "ECOMMERCE": 16.47,
+    "RETAIL": 16.95,
+    "LEGAL": 18.09
+  },
+  "duplicate_count": 0,
+  "question_ratio_by_class": {
+    "GENERIC": 0.694,
+    "ECOMMERCE": 0.508,
+    "RETAIL": 0.678,
+    "LEGAL": 0.826
+  },
+  "length_spread_across_class_means": 4.76,
+  "class_confusion_candidates": [
+    {
+      "text": "Apply store credit to the yoga mat sitting in checkout. The confirmation email never showed up in spam either.",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "RETAIL"
+      ]
+    },
+    {
+      "text": "Explain the consumer complaint like I am preparing for a consult, not asking for free advice.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Why did the price of this stainless water bottle jump after I refreshed?",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "SKU for winter gloves looks mismatched on the shelf strip in the deli case. No need to place an online order; I will take it today.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Consumer rights angle: can the subpoena waive a refund I am otherwise owed?",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Transfer baby wipes from the warehouse to the fitting rooms if you can. No need to place an online order; I will take it today.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Store ops question: how often do you restock plant food during the day? This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "The decree splits the refund. They already filed as single and kept the whole amount.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Swap the color on my ceramic cookware order before it leaves the warehouse?",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "RETAIL"
+      ]
+    },
+    {
+      "text": "Explain the NDA like I am preparing for a consult, not asking for free advice.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Why did the price of this yoga mat jump after I refreshed?. I already tried another browser and the same error appears.",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Consumer rights angle: can the demand letter waive a refund I am otherwise owed? I am not asking you to represent me, just to map the issues.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Landlord-tenant angle: how does the consumer complaint interact with local housing rules? This started after they changed terms without a clear yes from me.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Are you open early enough that I can grab winter gloves before work? This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Can you help me compare backpack with laptop sleeve options on this site?. Please keep the answer about this order, not a generic FAQ.",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "LEGAL"
+      ]
+    },
+    {
+      "text": "Why did the price of this ceramic cookware jump after I refreshed?",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Explain the insurance denial like I am preparing for a consult, not asking for free advice. This started after they changed terms without a clear yes from me.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Why is checkout blocking the smartwatch band because of an address check?",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of baby wipes, or only what is on the floor?",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Is the custody order valid if I never received a signed copy? I am not asking you to represent me, just to map the issues.",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Consumer rights angle: can the consumer complaint waive a refund I am otherwise owed?",
+      "intent": "LEGAL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Is inventory for phone chargers shared with the other branch, or only here? This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    },
+    {
+      "text": "Apply store credit to the noise cancelling headset sitting in checkout. I am on mobile and the desktop site behaves differently.",
+      "intent": "ECOMMERCE",
+      "also_suggests": [
+        "RETAIL"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of gift cards, or only what is on the floor? Parking is terrible so I need a fast answer.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "GENERIC"
+      ]
+    },
+    {
+      "text": "Can I pick up gift cards at curbside from this location today? This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "also_suggests": [
+        "ECOMMERCE"
+      ]
+    }
+  ],
+  "validation": {
+    "no_duplicates": true,
+    "balanced_classes": true,
+    "length_distribution_similar": true,
+    "mixture_of_questions_and_statements": true
+  }
+}

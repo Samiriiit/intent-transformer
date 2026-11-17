@@ -1,0 +1,286 @@
+{
+  "ood_path": "C:\\Users\\samkumar4\\Downloads\\transformer\\project\\data\\intent_ood_test.jsonl",
+  "n_examples": 400,
+  "accuracy": 0.4325,
+  "macro_f1": 0.3951890956812216,
+  "loss": 3.061936388015747,
+  "per_class": {
+    "GENERIC": {
+      "precision": 0.36507936507936506,
+      "recall": 0.92,
+      "f1": 0.5227272727272727,
+      "support": 100
+    },
+    "ECOMMERCE": {
+      "precision": 0.5925925925925926,
+      "recall": 0.16,
+      "f1": 0.25196850393700787,
+      "support": 100
+    },
+    "RETAIL": {
+      "precision": 0.6,
+      "recall": 0.39,
+      "f1": 0.4727272727272727,
+      "support": 100
+    },
+    "LEGAL": {
+      "precision": 0.4642857142857143,
+      "recall": 0.26,
+      "f1": 0.3333333333333333,
+      "support": 100
+    }
+  },
+  "confusion_matrix": [
+    [
+      92,
+      0,
+      5,
+      3
+    ],
+    [
+      56,
+      16,
+      16,
+      12
+    ],
+    [
+      36,
+      10,
+      39,
+      15
+    ],
+    [
+      68,
+      1,
+      5,
+      26
+    ]
+  ],
+  "label_order": [
+    "GENERIC",
+    "ECOMMERCE",
+    "RETAIL",
+    "LEGAL"
+  ],
+  "overall_unk_rate": 31.0769,
+  "unk_rate_per_class": {
+    "GENERIC": 32.4638,
+    "ECOMMERCE": 38.2056,
+    "RETAIL": 24.8908,
+    "LEGAL": 24.2806
+  },
+  "performance_by_unk_count": {
+    "0": {
+      "support": 38,
+      "accuracy": 0.5789473684210527,
+      "macro_f1": 0.4402341137123746
+    },
+    "1": {
+      "support": 104,
+      "accuracy": 0.47115384615384615,
+      "macro_f1": 0.4132454665777855
+    },
+    "2+": {
+      "support": 258,
+      "accuracy": 0.3953488372093023,
+      "macro_f1": 0.34610268609189965
+    }
+  },
+  "performance_by_subgroup": {
+    "brand_and_price_ecommerce": {
+      "support": 78,
+      "accuracy": 0.15384615384615385,
+      "macro_f1": 0.06666666666666667
+    },
+    "generic_what_is": {
+      "support": 30,
+      "accuracy": 0.8666666666666667,
+      "macro_f1": 0.23214285714285715
+    },
+    "short_legal_definition": {
+      "support": 63,
+      "accuracy": 0.09523809523809523,
+      "macro_f1": 0.043478260869565216
+    },
+    "short_retail_operational": {
+      "support": 100,
+      "accuracy": 0.39,
+      "macro_f1": 0.14028776978417265
+    }
+  },
+  "classification_report": "              precision    recall  f1-score   support\n\n     GENERIC     0.3651    0.9200    0.5227       100\n   ECOMMERCE     0.5926    0.1600    0.2520       100\n      RETAIL     0.6000    0.3900    0.4727       100\n       LEGAL     0.4643    0.2600    0.3333       100\n\n    accuracy                         0.4325       400\n   macro avg     0.5055    0.4325    0.3952       400\nweighted avg     0.5055    0.4325    0.3952       400\n",
+  "checkpoint": {
+    "best_epoch": 17,
+    "best_validation_loss": 0.21866531838973363,
+    "vocab_size": 1313,
+    "model_config": {
+      "vocab_size": 1313,
+      "embedding_dim": 64,
+      "num_heads": 4,
+      "hidden_dim": 256,
+      "num_layers": 2,
+      "num_classes": 4,
+      "max_length": 64,
+      "pad_token_id": 0,
+      "dropout": 0.1
+    }
+  },
+  "manual_probes": [
+    {
+      "text": "show me nike shoes under 5000",
+      "cleaned_tokens": [
+        "show",
+        "me",
+        "nike",
+        "shoes",
+        "under",
+        "5000"
+      ],
+      "unk_count": 2,
+      "predicted_intent": "GENERIC",
+      "confidence": 0.9973228573799133,
+      "probability_distribution": {
+        "GENERIC": 0.9973228573799133,
+        "ECOMMERCE": 0.00032402377109974623,
+        "RETAIL": 0.00014316756278276443,
+        "LEGAL": 0.002210077131167054
+      }
+    },
+    {
+      "text": "inventory level of store 12",
+      "cleaned_tokens": [
+        "inventory",
+        "level",
+        "of",
+        "store",
+        "12"
+      ],
+      "unk_count": 2,
+      "predicted_intent": "RETAIL",
+      "confidence": 0.9703564047813416,
+      "probability_distribution": {
+        "GENERIC": 0.02825498953461647,
+        "ECOMMERCE": 0.0013139648362994194,
+        "RETAIL": 0.9703564047813416,
+        "LEGAL": 7.460598862962797e-05
+      }
+    },
+    {
+      "text": "what is arbitration clause",
+      "cleaned_tokens": [
+        "what",
+        "is",
+        "arbitration",
+        "clause"
+      ],
+      "unk_count": 0,
+      "predicted_intent": "GENERIC",
+      "confidence": 0.6759980916976929,
+      "probability_distribution": {
+        "GENERIC": 0.6759980916976929,
+        "ECOMMERCE": 0.0002903541026171297,
+        "RETAIL": 0.0012554199201986194,
+        "LEGAL": 0.32245612144470215
+      }
+    },
+    {
+      "text": "what is the capital of france",
+      "cleaned_tokens": [
+        "what",
+        "is",
+        "the",
+        "capital",
+        "of",
+        "france"
+      ],
+      "unk_count": 1,
+      "predicted_intent": "GENERIC",
+      "confidence": 0.5383085608482361,
+      "probability_distribution": {
+        "GENERIC": 0.5383085608482361,
+        "ECOMMERCE": 0.0003132206329610199,
+        "RETAIL": 0.45767897367477417,
+        "LEGAL": 0.0036992058157920837
+      }
+    },
+    {
+      "text": "compare sofas on the website",
+      "cleaned_tokens": [
+        "compare",
+        "sofas",
+        "on",
+        "the",
+        "website"
+      ],
+      "unk_count": 0,
+      "predicted_intent": "ECOMMERCE",
+      "confidence": 0.9805503487586975,
+      "probability_distribution": {
+        "GENERIC": 0.012345914728939533,
+        "ECOMMERCE": 0.9805503487586975,
+        "RETAIL": 0.0062939757481217384,
+        "LEGAL": 0.0008098339894786477
+      }
+    },
+    {
+      "text": "compare sofas on the showroom floor",
+      "cleaned_tokens": [
+        "compare",
+        "sofas",
+        "on",
+        "the",
+        "showroom",
+        "floor"
+      ],
+      "unk_count": 0,
+      "predicted_intent": "RETAIL",
+      "confidence": 0.9466217756271362,
+      "probability_distribution": {
+        "GENERIC": 0.021761924028396606,
+        "ECOMMERCE": 0.031178530305624008,
+        "RETAIL": 0.9466217756271362,
+        "LEGAL": 0.0004378422163426876
+      }
+    },
+    {
+      "text": "they changed the agreement after I signed it",
+      "cleaned_tokens": [
+        "they",
+        "changed",
+        "the",
+        "agreement",
+        "after",
+        "i",
+        "signed",
+        "it"
+      ],
+      "unk_count": 0,
+      "predicted_intent": "LEGAL",
+      "confidence": 0.9979926347732544,
+      "probability_distribution": {
+        "GENERIC": 0.00013300063437782228,
+        "ECOMMERCE": 0.001263504265807569,
+        "RETAIL": 0.0006108893430791795,
+        "LEGAL": 0.9979926347732544
+      }
+    },
+    {
+      "text": "how are sofas manufactured",
+      "cleaned_tokens": [
+        "how",
+        "are",
+        "sofas",
+        "manufactured"
+      ],
+      "unk_count": 1,
+      "predicted_intent": "GENERIC",
+      "confidence": 0.9898998141288757,
+      "probability_distribution": {
+        "GENERIC": 0.9898998141288757,
+        "ECOMMERCE": 4.49879516963847e-05,
+        "RETAIL": 0.009060699492692947,
+        "LEGAL": 0.000994550995528698
+      }
+    }
+  ]
+}

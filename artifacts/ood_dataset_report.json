@@ -1,0 +1,305 @@
+{
+  "name": "intent_ood_test",
+  "total_samples": 400,
+  "per_class_counts": {
+    "GENERIC": 100,
+    "RETAIL": 100,
+    "ECOMMERCE": 100,
+    "LEGAL": 100
+  },
+  "duplicate_count": 0,
+  "overlap_with_blocked": 0,
+  "average_length_by_class": {
+    "GENERIC": 6.9,
+    "ECOMMERCE": 9.92,
+    "RETAIL": 6.87,
+    "LEGAL": 5.55
+  },
+  "question_ratio_by_class": {
+    "GENERIC": 0.97,
+    "ECOMMERCE": 0.05,
+    "RETAIL": 0.27,
+    "LEGAL": 0.78
+  },
+  "statement_ratio_by_class": {
+    "GENERIC": 0.03,
+    "ECOMMERCE": 0.95,
+    "RETAIL": 0.73,
+    "LEGAL": 0.22
+  },
+  "length_spread": 4.37,
+  "validation": {
+    "no_duplicates": true,
+    "balanced": true,
+    "no_blocked_overlap": true
+  },
+  "purpose": "evaluation_only",
+  "never_use_for": [
+    "training",
+    "validation",
+    "vocabulary",
+    "early_stopping",
+    "checkpoint_selection"
+  ],
+  "examples_by_category": {
+    "GENERIC": [
+      "what is the greenhouse effect",
+      "how does a heat pump move warmth",
+      "how does a fuse protect a circuit",
+      "why do paper cuts hurt so much",
+      "what is the capital of canada",
+      "why do some animals migrate seasonally",
+      "why do we see phases of the moon",
+      "how does a camera lens focus light"
+    ],
+    "ECOMMERCE": [
+      "suggest a fitness band that stays quiet and fits around four thousand rupees",
+      "looking for a quieter running shoes than my old one max budget 12000",
+      "recommend kitchen blender for college that survives rain max budget 12000",
+      "got any android phone recommendations in the 7 to 9k range that ship this week",
+      "search decathlon fitness band with free returns if possible",
+      "find tablet listings that mention noise reduction under 80 dollars",
+      "motorola mechanical keyboard with waterproof rating around 2k",
+      "want tablet with long battery under 1500"
+    ],
+    "RETAIL": [
+      "transfer this sku to outlet 34",
+      "move 17 units to the front shelf",
+      "where is aisle 8",
+      "front shelf looks empty but system says 6 on hand",
+      "shelf 11 label does not match the barcode",
+      "hangers missing in fitting room 3",
+      "put returns on the sorting table",
+      "transfer this sku to outlet 4"
+    ],
+    "LEGAL": [
+      "what is a warranty disclaimer",
+      "define equitable estoppel briefly",
+      "define quiet title",
+      "what is a three-day notice",
+      "is a verbal lease enforceable for a year",
+      "define duty of care",
+      "can a minor sign this",
+      "what does hold harmless mean"
+    ]
+  },
+  "ambiguous_candidates": [
+    {
+      "text": "need gift-worthy rain jacket cheaper than 4500 and not flashy packaging",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "want android phone with long battery in the 7 to 9k range",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "where is aisle 3",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "want tablet with long battery under 80 dollars",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "is outlet 28 still open for employee pickup",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find kitchen blender listings that mention noise reduction cheaper than 4500",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "move overstock from receiving to aisle 17",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "backroom inventory count is off by 11",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "what is the history of contract bridge",
+      "intent": "GENERIC",
+      "flags": [
+        "generic_with_domain_nouns"
+      ]
+    },
+    {
+      "text": "aisle 9 needs a price gun",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "help me pick power bank for a small kitchen under 30k",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "what is a demand for assurance",
+      "intent": "LEGAL",
+      "flags": [
+        "short_legal_definition"
+      ]
+    },
+    {
+      "text": "need gift-worthy laptop stand max budget 12000 and not flashy packaging",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "got any backpack recommendations below 2999 that ship this week",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "looking for laptop stand from local-market under 30k",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "what is a protective order",
+      "intent": "LEGAL",
+      "flags": [
+        "short_legal_definition"
+      ]
+    },
+    {
+      "text": "inventory level of outlet 23",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find me xiaomi gear similar to what influencers push below 2999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "need a decathlon casual sneakers max budget 12000",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "is there a deal on backpack right now cheaper than 4500",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "find smartwatch listings that mention noise reduction in the 7 to 9k range",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "looking for android phone from decathlon under 30k",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "transfer this sku to outlet 2",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "need a oneplus air fryer below 2999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "reebok over-ear headphones with waterproof rating around 2k",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "what is mutual assent",
+      "intent": "LEGAL",
+      "flags": [
+        "short_legal_definition"
+      ]
+    },
+    {
+      "text": "how does a qr code store data",
+      "intent": "GENERIC",
+      "flags": [
+        "generic_with_domain_nouns"
+      ]
+    },
+    {
+      "text": "looking for a quieter laptop stand than my old one below 2999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "what is a merger clause",
+      "intent": "LEGAL",
+      "flags": [
+        "short_legal_definition"
+      ]
+    },
+    {
+      "text": "is outlet 16 still open for employee pickup",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    }
+  ],
+  "unk_rate_overall_with_current_vocab": 31.08,
+  "unk_rate_by_class_with_current_vocab": {
+    "GENERIC": 32.46,
+    "ECOMMERCE": 38.21,
+    "RETAIL": 24.89,
+    "LEGAL": 24.28
+  }
+}

@@ -1,0 +1,439 @@
+{
+  "name": "intents_v3",
+  "total_samples": 2800,
+  "per_class_counts": {
+    "GENERIC": 700,
+    "RETAIL": 700,
+    "LEGAL": 700,
+    "ECOMMERCE": 700
+  },
+  "duplicate_count": 0,
+  "overlap_with_blocked": 0,
+  "average_length_by_class": {
+    "GENERIC": 11.88,
+    "ECOMMERCE": 13.88,
+    "RETAIL": 14.23,
+    "LEGAL": 15.19
+  },
+  "question_ratio_by_class": {
+    "GENERIC": 0.704,
+    "ECOMMERCE": 0.363,
+    "RETAIL": 0.497,
+    "LEGAL": 0.801
+  },
+  "statement_ratio_by_class": {
+    "GENERIC": 0.296,
+    "ECOMMERCE": 0.637,
+    "RETAIL": 0.503,
+    "LEGAL": 0.199
+  },
+  "length_spread": 3.31,
+  "validation": {
+    "no_duplicates": true,
+    "balanced": true,
+    "no_blocked_overlap": true
+  },
+  "source": "intents_v2 + 800 targeted augmentations",
+  "augmentation_counts": {
+    "GENERIC": 200,
+    "ECOMMERCE": 200,
+    "RETAIL": 200,
+    "LEGAL": 200
+  },
+  "ambiguous_candidates": [
+    {
+      "text": "got any lenovo monitor priced in rupees under 6999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "got any acer headphones similar to last year under 9999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "suggest lenovo shoes around 1999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "looking for oneplus keyboard around 1999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "recommend realme backpack refurbished with warranty under 1999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "looking for puma mouse priced in dollars under 24999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "SKU for winter gloves looks mismatched on the shelf strip in the endcap by the entrance.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find samsung backpack under 5999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "SKU for cast iron pans looks mismatched on the shelf strip in the deli case. No need to place an online order; I will take it today.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "got any nike speaker priced in rupees under 11999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "SKU for gift cards looks mismatched on the shelf strip in electronics. No need to place an online order; I will take it today.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "help me pick vivo router under 3499",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "suggest sony mixer priced in dollars under 24999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "SKU for winter gloves looks mismatched on the shelf strip in seasonal.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find samsung jacket around 11999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "Any outlet near the upstairs cafe I can borrow for ten minutes?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "SKU for plant food looks mismatched on the shelf strip in customer service. This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "aisle 13 needs restock on shoes",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find asus earbuds under 2999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "backroom count for paint",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "show me samsung camera under 3999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "looking for puma earbuds that pairs with android under 3999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "search for hp router around 1999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "customer waiting for mugs size check in backroom",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of extension cords, or only what is on the floor?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "move cereal from receiving to aisle 15",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "help me pick realme earbuds similar to last year under 4499",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "need vivo tablet below 11999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "why do stores group watches by aisle according to merchandising research",
+      "intent": "GENERIC",
+      "flags": [
+        "generic_with_domain_nouns"
+      ]
+    },
+    {
+      "text": "SKU for wide-width shoes looks mismatched on the shelf strip in pharmacy. No need to place an online order; I will take it today.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    }
+  ],
+  "confusion_candidates": [
+    {
+      "text": "search for puma jacket under 5499",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "I need phone chargers. Point me toward aisle 7 if that is right.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "move cereal from receiving to aisle 15",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "backroom count for paint",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "backroom count for diapers",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "I need winter gloves. Point me toward aisle 7 if that is right. Parking is terrible so I need a fast answer.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "recommend xiaomi mixer under 5499",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "got any apple watch under 3499",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "why do running shoes use foam midsoles scientifically",
+      "intent": "GENERIC",
+      "flags": [
+        "generic_with_domain_nouns"
+      ]
+    },
+    {
+      "text": "Can someone check aisle 7 for gluten-free pasta?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "SKU for winter gloves looks mismatched on the shelf strip in the back room. I am already in the building.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "find samsung earbuds that pairs with android under 8999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of extension cords, or only what is on the floor? A manager would help if associates are busy.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "SKU for plant food looks mismatched on the shelf strip in customer service. This is about the physical store, not the website.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "outlet 35 asked for a stock transfer of batteries",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "floor walk: missing paint near aisle 18",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "looking for realme monitor under 2999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "pull paint from overstock for aisle 27",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "need apple camera below 14999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    },
+    {
+      "text": "Can you check backroom stock for SKU 44821 before I drive over?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "how does a receipt printer work in a store setting Keep it concise.",
+      "intent": "GENERIC",
+      "flags": [
+        "generic_with_domain_nouns"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of gift cards, or only what is on the floor? Parking is terrible so I need a fast answer.",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "Do you have backroom stock of cast iron pans, or only what is on the floor?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "Before I leave, can you confirm aisle 7 has baby wipes in my size?",
+      "intent": "RETAIL",
+      "flags": [
+        "ops_style"
+      ]
+    },
+    {
+      "text": "help me pick dell monitor under 9999",
+      "intent": "ECOMMERCE",
+      "flags": [
+        "brand_or_price_style"
+      ]
+    }
+  ],
+  "added_example_count": 800,
+  "vocab_coverage_of_added_vs_v2_vocab": {
+    "token_coverage_pct": 73.68,
+    "total_tokens": 5992,
+    "known_tokens": 4415,
+    "unk_tokens": 1577
+  }
+}
